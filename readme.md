@@ -1,6 +1,6 @@
 # logreplay
 
-A tool to copy given logfile at a given rate (lines per second). Useful for simulating actual programs outputting actual logs.
+A tool to copy given logfile at a given rate (lines per second). Useful for simulating actual programs outputting actual logs, and for testing programs that process live logs.
 
 
 ## Build
@@ -20,4 +20,9 @@ The above will copy file `original.log` to `replayed.log` at a slow rate and dis
 
 The rate at which log is replayed can be set by the user. At any point just type the required lines per second and press Enter. Eg. Type 10000 to copy at 10000 lines/second.
 
-Rather than displaying rates user can display animated widget. At any point press `t` and and press Enter to toggle between rates and widget.
+
+Instead of numbers, an animated widget can be used to illustrate current print rate.
+
+![Line per second widget](https://raw.githubusercontent.com/macsmol/logreplay/refs/heads/main/linePerSecRateWidget.gif)
+
+ At any point press `t` and press Enter to toggle between rates and widget.
